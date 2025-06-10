@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f9f9f9;
+  color: #2e2e2e;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.TodoForm {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.TodoForm input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.TodoForm input:focus {
+  border-color: #8b5cf6;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.TodoForm button {
+  background: gray;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.TodoForm button:hover {
+  background: black;
+  transform: scale(1.03);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.controls label {
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls select {
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 0.95rem;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Todo:hover {
+  background: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.Todo span {
+  flex: 1;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.Todo .completed {
+  text-decoration: line-through;
+  color: #a1a1aa;
+}
+
+.Todo .icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.Todo .icons svg {
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.Todo .icons svg:hover {
+  color: #111827;
+}
+
+@media (max-width: 480px) {
+  .TodoForm {
+    flex-direction: column;
+  }
+
+  .TodoForm button {
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
