@@ -1,5 +1,7 @@
 A simple yet feature-rich React-based To-Do List application that allows users to add, remove, and mark tasks as complete. The component supports task input validation, dynamic display, optional sorting and filtering, and persists tasks using `localStorage` for data retention across page reloads.
 
+Deployed Link: https://todo-assignment-beryl.vercel.app/
+
 ## Features
 
 * **Add Tasks**: Input validation ensures non-empty task names.
